@@ -7,7 +7,7 @@ I built an app with a direct and powerful purpose. My app does all of the things
 Author: Cordell Andrade/201-21
 
 ### Links and Resources
-* [submission PR](url)
+* [reset.css](https://meyerweb.com/eric/tools/css/reset/)
 * Any Links you used as reference
 
 ### Reflections and Comments
