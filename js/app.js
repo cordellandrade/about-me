@@ -6,57 +6,61 @@ var userName = prompt('Hello, what is your name?');
 // console.log(userName);
 alert(`Hello ${userName}, nice to meet you!`);
 
-var questionOne = prompt('Do I live in the US?').toLowerCase();
-// console.log(questionOne);
+var answerOne = prompt('Do I live in the US?').toLowerCase();
+// console.log(answerOne);
 
-if (questionOne === 'yes' || questionOne === 'y') {
+if (answerOne === 'yes' || answerOne === 'y') {
     // console.log('You are wrong, sorry.')
     alert('You are wrong, sorry.')
-} else if (questionOne === 'no' || questionOne === 'n') {
+} else if (answerOne === 'no' || answerOne === 'n') {
     // console.log('You are correct!')
     alert('You are correct!')
 };
 
-var questionTwo = prompt('Did I live in the US before?').toLowerCase();
-// console.log(questionTwo);
+var answerTwo = prompt('Did I live in the US before?').toLowerCase();
+// console.log(answerTwo);
 
-if (questionTwo === 'yes' || questionTwo === 'y') {
+if (answerTwo === 'yes' || answerTwo === 'y') {
     // console.log('You are correct!')
     alert('You are correct!')
-} else if (questionTwo === 'no' || questionTwo === 'n') {
+} else if (answerTwo === 'no' || answerTwo === 'n') {
     // console.log('You are wrong, sorry.')
     alert('You are wrong, sorry.')
 };
 
-var questionThree = prompt('Do I enjoy sports?').toLowerCase();
-// console.log(questionThree);
+var answerThree = prompt('Do I enjoy sports?').toLowerCase();
+// console.log(answerThree);
 
-if (questionThree === 'yes' || questionThree === 'y') {
+if (answerThree ===
+    'yes' || answerThree ===
+    'y') {
     // console.log('You are correct!')
     alert('You are correct!')
-} else if (questionThree === 'no' || questionThree === 'n') {
+} else if (answerThree ===
+    'no' || answerThree ===
+    'n') {
     // console.log('You are wrong, sorry.')
     alert('You are wrong, sorry.')
 };
 
-var questionFour = prompt('Do I love dogs?').toLowerCase();
-// console.log(questionFour);
+var answerFour = prompt('Do I love dogs?').toLowerCase();
+// console.log(answerFour);
 
-if (questionFour === 'yes' || questionFour === 'y') {
+if (answerFour === 'yes' || answerFour === 'y') {
     // console.log('You are correct!')
     alert('You are correct!')
-} else if (questionFour === 'no' || questionFour === 'n') {
+} else if (answerFour === 'no' || answerFour === 'n') {
     // console.log('You are wrong, sorry.')
     alert('You are wrong, sorry.')
 };
 
-var questionFive = prompt('Is Star Wars one of my favorite trilogies?').toLowerCase();
-// console.log(questionFive);
+var answerFive = prompt('Is Star Wars one of my favorite trilogies?').toLowerCase();
+// console.log(answerFive);
 
-if (questionFive === 'yes' || questionFive === 'y') {
+if (answerFive === 'yes' || answerFive === 'y') {
     // console.log('You are correct!')
     alert('You are correct!')
-} else if (questionFive === 'no' || questionFive === 'n') {
+} else if (answerFive === 'no' || answerFive === 'n') {
     // console.log('You are wrong, sorry.')
     alert('You are wrong, sorry.')
 };
