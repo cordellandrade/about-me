@@ -2,6 +2,9 @@ body {
     width: 1400px;
     border: 1px solid black;
     margin: auto;
+    padding: 48px;
+    margin-top: 28px;
+    border-radius: 50px;
 }
 
 h1 {
@@ -24,6 +27,7 @@ p {
 
 li {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    list-style-type: disc;
 }
 
 footer {
