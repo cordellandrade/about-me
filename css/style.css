@@ -27,7 +27,7 @@ p {
 
 li {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    list-style-type: disc;
+    list-style-type: circle;
 }
 
 footer {
