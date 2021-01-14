@@ -11,5 +11,5 @@ Author: Cordell Andrade/201-21
 * Any links you used as reference
 
 ### Reflections and Comments
-* Consider including the answers to your daily journal and submission questions here
-* This is also a good place to reflect on the tools and resources used and learned
+* I felt this lab went really well, was not that difficult to complete.
+It took me 2 hours to completed which is how long I expected it to take.
