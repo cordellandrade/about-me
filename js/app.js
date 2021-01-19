@@ -4,9 +4,13 @@ console.log('Hello 201!');
 
 var userPoints = 0;
 
-var userName = prompt('Hello, what is your name?');
-// console.log(userName);
-alert(`Hello ${userName}, nice to meet you!`);
+var userName = prompt('Hello, what is your name?'); {
+    while (!userName) {
+        userName = prompt('What is your name? Really, we need it.');
+    }
+    // console.log(userName);
+    alert(`Hello ${userName}, nice to meet you!`);
+};
 
 
 var answerOne = prompt('Do I live in the US?').toLowerCase();
@@ -112,7 +116,7 @@ questionNumber6();
 function questionNumber7() {
 
     var whatMovie = ['The Matrix', 'Star Wars The Return Of The Sith', 'Inception', 'The Departer']
-    var guessAnswer = prompt(' Can you guess what movie is my favorite?');
+    var guessAnswer = prompt(' Can you guess what movie is my favorite?').toLocaleLowerCase();
     var attemptsRemaining = 6;
     var answeredCorrect = false;
 
