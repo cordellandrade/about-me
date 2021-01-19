@@ -66,3 +66,74 @@ if (answerFive === 'yes' || answerFive === 'y') {
 };
 
 alert(`Thank you ${userName} for visiting my website :)`);
+
+alert('Welcome to my guessing game!');
+
+function questionNumber6() {
+
+    var tries = 0;
+    var guessNumber = 7;
+    var correctGuess = false;
+
+    while (tries < 3 && !correctGuess) {
+        tries++;
+        var guessGame = parseInt(prompt('I\'m thinking of a number from 1 - 10, can you guess the number?'));
+        console.log(typeof guessGame, guessGame);
+        if (guessGame < guessNumber) {
+            alert(`Sorry ${userName} that guess is too low`)
+        } else if (guessGame > guessNumber) {
+            alert(`Sorry ${userName} that guess is too high`)
+        } else if (guessGame === 7) {
+            alert(`Correct ${userName} !`)
+            correctGuess = true;
+            userPoints++;
+        }
+    }
+
+    if (!correctGuess) {
+        alert(`
+        You 're out of guesses, the correct one was  ${guessNumber}`);
+    }
+}
+
+questionNumber6();
+
+
+
+
+
+function questionNumber7() {
+
+
+    var whatMovie = ['the matrix', 'starwars', 'inception', 'the departer']
+    var guessAnswer = prompt(' Can you guess what movie is my favorite?');
+    var attemptsRemaining = 6;
+    var answeredCorrect = false;
+
+    while (attemptsRemaining > 0 && !answeredCorrect) {
+        attemptsRemaining--;
+        for (var i = 0; i < whatMovie.length; i++) {
+            if (guessAnswer === whatMovie[i]) {
+                answeredCorrect = true;
+                userPoints++;
+                alert(`My favorite movie to watch is ${guessAnswer}`);
+
+            }
+        }
+        if (attemptsRemaining > 0 && !answeredCorrect) {
+            guessAnswer = prompt('Sorry that wasn\'t a correct answer please try again!');
+        }
+        if (attemptsRemaining === 0 && !answeredCorrect) {
+            alert('Sorry you\'re out of tries!');
+        }
+
+
+    }
+
+    if (!answeredCorrect) {
+        alert(`Thanks for playing, ${user}, the correct answer was the matrix :)`)
+    }
+
+    alert('you have ' + userPoints + ' points.');
+
+}
