@@ -13,76 +13,95 @@ alert(`Hello ${userName}, nice to meet you!`);
 // };
 
 
-var answerOne = prompt('Do I live in the US?').toLowerCase();
+function answerOne() {
+prompt('Do I live in the US?').toLowerCase(); 
 // console.log(answerOne);
 
+    if (answerOne === 'yes' || answerOne === 'y') {
+        // console.log('You are wrong, sorry.')
+        alert('You are wrong, sorry.')
+    } else if (answerOne === 'no' || answerOne === 'n') {
+        // console.log('You are correct!')
+        alert('You are correct!')
+        userPoints++;
+    }
+}
 
-if (answerOne === 'yes' || answerOne === 'y') {
-    // console.log('You are wrong, sorry.')
-    alert('You are wrong, sorry.')
-} else if (answerOne === 'no' || answerOne === 'n') {
-    // console.log('You are correct!')
-    alert('You are correct!')
-    userPoints++;
-};
+answerOne();
 
-var answerTwo = prompt('Did I live in the US before?').toLowerCase();
+function answerTwo() {
+prompt('Did I live in the US before?').toLowerCase(); 
 // console.log(answerTwo);
 
-if (answerTwo === 'yes' || answerTwo === 'y') {
-    // console.log('You are correct!')
-    alert('You are correct!')
-    userPoints++;
-} else if (answerTwo === 'no' || answerTwo === 'n') {
-    // console.log('You are wrong, sorry.')
-    alert('You are wrong, sorry.')
-};
+    if (answerTwo === 'yes' || answerTwo === 'y') {
+        // console.log('You are correct!')
+        alert('You are correct!')
+        userPoints++;
+    } else if (answerTwo === 'no' || answerTwo === 'n') {
+        // console.log('You are wrong, sorry.')
+        alert('You are wrong, sorry.')
+    }
+}
 
-var answerThree = prompt('Do I enjoy sports?').toLowerCase();
+answerTwo();
+
+function answerThree() {
+prompt('Do I enjoy sports?').toLowerCase(); 
 // console.log(answerThree);
 
-if (answerThree ===
-    'yes' || answerThree ===
-    'y') {
-    // console.log('You are correct!')
-    alert('You are correct!')
-    userPoints++;
-} else if (answerThree ===
-    'no' || answerThree ===
-    'n') {
-    // console.log('You are wrong, sorry.')
-    alert('You are wrong, sorry.')
-};
+    if (answerThree ===
+        'yes' || answerThree ===
+        'y') {
+        // console.log('You are correct!')
+        alert('You are correct!')
+        userPoints++;
+    } else if (answerThree ===
+        'no' || answerThree ===
+        'n') {
+        // console.log('You are wrong, sorry.')
+        alert('You are wrong, sorry.')
+    }
+}
 
-var answerFour = prompt('Do I love dogs?').toLowerCase();
+answerThree();
+
+function answerFour() {
+prompt('Do I love dogs?').toLowerCase(); 
 // console.log(answerFour);
 
-if (answerFour === 'yes' || answerFour === 'y') {
-    // console.log('You are correct!')
-    alert('You are correct!')
-    userPoints++;
-} else if (answerFour === 'no' || answerFour === 'n') {
-    // console.log('You are wrong, sorry.')
-    alert('You are wrong, sorry.')
-};
+    if (answerFour === 'yes' || answerFour === 'y') {
+        // console.log('You are correct!')
+        alert('You are correct!')
+        userPoints++;
+    } else if (answerFour === 'no' || answerFour === 'n') {
+        // console.log('You are wrong, sorry.')
+        alert('You are wrong, sorry.')
+    }
+}
 
-var answerFive = prompt('Is Star Wars one of my favorite trilogies?').toLowerCase();
+answerFour();
+
+function answerFive() {
+prompt('Is Star Wars one of my favorite trilogies?').toLowerCase(); 
 // console.log(answerFive);
 
-if (answerFive === 'yes' || answerFive === 'y') {
-    // console.log('You are correct!')
-    alert('You are correct!')
-    userPoints++;
-} else if (answerFive === 'no' || answerFive === 'n') {
-    // console.log('You are wrong, sorry.')
-    alert('You are wrong, sorry.')
-};
+    if (answerFive === 'yes' || answerFive === 'y') {
+        // console.log('You are correct!')
+        alert('You are correct!')
+        userPoints++;
+    } else if (answerFive === 'no' || answerFive === 'n') {
+        // console.log('You are wrong, sorry.')
+        alert('You are wrong, sorry.')
+    }
+}
+
+answerFive();
 
 alert(`Thank you ${userName} for visiting my website :)`);
 
 alert('Welcome to my guessing game!');
 
-var questionNumber6
+function answerSix() {
 
 var tries = 0;
 var guessNumber = 7;
@@ -109,11 +128,11 @@ while (tries < 3 && !correctGuess) {
         You 're out of guesses, the correct one was  ${guessNumber}`);
     }
 }
+}
+answerSix();
 
 
-
-
-var questionNumber7
+function answerSeven() {
 
 var whatMovie = ['the matrix', 'star wars the return of the sith', 'inception', 'the departer']
 var guessAnswer = prompt(' Can you guess what movie is my favorite?').toLowerCase();
@@ -142,5 +161,7 @@ while (attemptsRemaining > 0 && !answeredCorrect) {
 if (!answeredCorrect) {
     alert(`Thanks for playing, ${userName}, the correct answer was the matrix :)`)
 }
+}
+answerSeven();
 
 alert('you have ' + userPoints + ' points.');
