@@ -136,9 +136,8 @@ while (attemptsRemaining > 0 && !answeredCorrect) {
     if (attemptsRemaining === 0 && !answeredCorrect) {
         alert('Sorry you\'re out of tries!');
     }
-
-
 }
+
 
 if (!answeredCorrect) {
     alert(`Thanks for playing, ${userName}, the correct answer was the matrix :)`)
