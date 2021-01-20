@@ -4,13 +4,13 @@ console.log('Hello 201!');
 
 var userPoints = 0;
 
-var userName = prompt('Hello, what is your name?'); {
-    while (!userName) {
-        userName = prompt('What is your name? Really, we need it.');
-    }
-    // console.log(userName);
-    alert(`Hello ${userName}, nice to meet you!`);
-};
+var userName = prompt('Hello, what is your name?'); // {
+//     while (!userName) {
+//         userName = prompt('What is your name? Really, we need it.');
+//     }
+// console.log(userName);
+alert(`Hello ${userName}, nice to meet you!`);
+// };
 
 
 var answerOne = prompt('Do I live in the US?').toLowerCase();
@@ -82,27 +82,27 @@ alert(`Thank you ${userName} for visiting my website :)`);
 
 alert('Welcome to my guessing game!');
 
-function questionNumber6() {
+var questionNumber6
 
-    var tries = 0;
-    var guessNumber = 7;
-    var correctGuess = false;
+var tries = 0;
+var guessNumber = 7;
+var correctGuess = false;
 
-    while (tries < 3 && !correctGuess) {
-        tries++;
-        //parseInt = + or +prompt //
-        var guessGame = +prompt('I\'m thinking of a number from 1 - 10, can you guess the number?');
-        // console.log(typeof guessGame, guessGame);
-        if (guessGame < guessNumber) {
-            alert(`Sorry ${userName} that guess is too low`)
-        } else if (guessGame > guessNumber) {
-            alert(`Sorry ${userName} that guess is too high`)
-        } else if (guessGame === 7) {
-            alert(`Correct ${userName} !`)
-            correctGuess = true;
-            userPoints++;
-        }
+while (tries < 3 && !correctGuess) {
+    tries++;
+    //parseInt = + or +prompt //
+    var guessGame = +prompt('I\'m thinking of a number from 1 - 10, can you guess the number?');
+    // console.log(typeof guessGame, guessGame);
+    if (guessGame < guessNumber) {
+        alert(`Sorry ${userName} that guess is too low`)
+    } else if (guessGame > guessNumber) {
+        alert(`Sorry ${userName} that guess is too high`)
+    } else if (guessGame === 7) {
+        alert(`Correct ${userName} !`)
+        correctGuess = true;
+        userPoints++;
     }
+
 
     if (!correctGuess) {
         alert(`
@@ -110,41 +110,38 @@ function questionNumber6() {
     }
 }
 
-questionNumber6();
 
 
-function questionNumber7() {
 
-    var whatMovie = ['The Matrix', 'Star Wars The Return Of The Sith', 'Inception', 'The Departer']
-    var guessAnswer = prompt(' Can you guess what movie is my favorite?').toLocaleLowerCase();
-    var attemptsRemaining = 6;
-    var answeredCorrect = false;
+var questionNumber7
 
-    while (attemptsRemaining > 0 && !answeredCorrect) {
-        attemptsRemaining--;
-        for (var i = 0; i < whatMovie.length; i++) {
-            if (guessAnswer === whatMovie[i]) {
-                answeredCorrect = true;
-                userPoints++;
-                alert(`My favorite movie to watch is ${guessAnswer}.`);
+var whatMovie = ['the matrix', 'star wars the return of the sith', 'inception', 'the departer']
+var guessAnswer = prompt(' Can you guess what movie is my favorite?').toLowerCase();
+var attemptsRemaining = 6;
+var answeredCorrect = false;
 
-            }
+while (attemptsRemaining > 0 && !answeredCorrect) {
+    attemptsRemaining--;
+    for (var i = 0; i < whatMovie.length; i++) {
+        if (guessAnswer === whatMovie[i]) {
+            answeredCorrect = true;
+            userPoints++;
+            alert(`My favorite movie to watch is ${guessAnswer}.`);
+
         }
-        if (attemptsRemaining > 0 && !answeredCorrect) {
-            guessAnswer = prompt('Sorry that wasn\'t a correct answer please try again!');
-        }
-        if (attemptsRemaining === 0 && !answeredCorrect) {
-            alert('Sorry you\'re out of tries!');
-        }
-
-
+    }
+    if (attemptsRemaining > 0 && !answeredCorrect) {
+        guessAnswer = prompt('Sorry that wasn\'t a correct answer please try again!');
+    }
+    if (attemptsRemaining === 0 && !answeredCorrect) {
+        alert('Sorry you\'re out of tries!');
     }
 
-    if (!answeredCorrect) {
-        alert(`Thanks for playing, ${userName}, the correct answer was the matrix :)`)
-    }
 
-    alert('you have ' + userPoints + ' points.');
-};
+}
 
-questionNumber7();
+if (!answeredCorrect) {
+    alert(`Thanks for playing, ${userName}, the correct answer was the matrix :)`)
+}
+
+alert('you have ' + userPoints + ' points.');
