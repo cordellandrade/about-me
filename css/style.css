@@ -7,6 +7,13 @@ body {
     border-radius: 50px;
 }
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 125px;
+}
+
 h1 {
     text-align: center;
     color: purple;
