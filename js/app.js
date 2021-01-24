@@ -4,24 +4,19 @@ console.log('Hello 201!')
 
 var userPoints = 0;
 
-var userName = prompt('Hello, what is your name?') // {
-    //     while (!userName) {
-    //         userName = prompt('What is your name? Really, we need it.');
-    //     }
-    // console.log(userName);
+var userName = prompt('Hello, what is your name?')
 alert(`Hello ${userName}, nice to meet you!`)
-    // };
+
 
 
 function answerOne() {
     var response = prompt('Do I live in the US?').toLowerCase()
-        // console.log(answerOne);
 
     if (response === 'yes' || response === 'y') {
-        // console.log('You are wrong, sorry.')
+
         alert('You are wrong, sorry.');
     } else if (response === 'no' || response === 'n') {
-        // console.log('You are correct!')
+
         alert('You are correct!')
         userPoints++;
     }
@@ -31,14 +26,11 @@ answerOne();
 
 function answerTwo() {
     var response = prompt('Did I live in the US before?').toLowerCase();
-    // console.log(answerTwo);
 
     if (response === 'yes' || response === 'y') {
-        // console.log('You are correct!')
         alert('You are correct!')
         userPoints++;
     } else if (response === 'no' || response === 'n') {
-        // console.log('You are wrong, sorry.')
         alert('You are wrong, sorry.')
     }
 }
@@ -48,14 +40,11 @@ answerTwo();
 
 function answerThree() {
     var respone = prompt('Do I enjoy sports?').toLowerCase();
-    // console.log(answerThree);
 
     if (respone === 'yes' || respone === 'y') {
-        // console.log('You are correct!')
         alert('You are correct!')
         userPoints++;
     } else if (respone === 'no' || respone === 'n') {
-        // console.log('You are wrong, sorry.')
         alert('You are wrong, sorry.')
     }
 }
@@ -64,14 +53,11 @@ answerThree();
 
 function answerFour() {
     var response = prompt('Do I love dogs?').toLowerCase();
-    // console.log(answerFour);
 
     if (response === 'yes' || response === 'y') {
-        // console.log('You are correct!')
         alert('You are correct!')
         userPoints++;
     } else if (response === 'no' || response === 'n') {
-        // console.log('You are wrong, sorry.')
         alert('You are wrong, sorry.')
     }
 }
@@ -80,21 +66,16 @@ answerFour();
 
 function answerFive() {
     var response = prompt('Is Star Wars one of my favorite trilogies?').toLowerCase();
-    // console.log(answerFive);
 
     if (response === 'yes' || response === 'y') {
-        // console.log('You are correct!')
         alert('You are correct!')
         userPoints++;
     } else if (response === 'no' || response === 'n') {
-        // console.log('You are wrong, sorry.')
         alert('You are wrong, sorry.')
     }
 }
 
 answerFive();
-
-// alert(`Thank you ${userName} for visiting my website :)`);
 
 alert('Welcome to my guessing game!');
 
@@ -107,7 +88,6 @@ function answerSix() {
     while (tries < 3 && !correctGuess) {
         tries++;
         var guessGame = parseInt(prompt('I\'m thinking of a number from 1 - 10, can you guess the number?'));
-        // console.log(typeof guessGame, guessGame);
         if (guessGame < guessNumber) {
             alert(`Sorry ${userName} that guess is too low`)
         } else if (guessGame > guessNumber) {
