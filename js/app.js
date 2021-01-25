@@ -110,7 +110,7 @@ answerSix();
 
 function answerSeven() {
 
-    var whatMovie = ['the matrix', 'star wars the return of the sith', 'inception', 'the departer']
+    var whatMovie = ['the matrix', ' star wars the return of the sith', ' inception', ' the departed']
     var guessAnswer = prompt(' Can you guess what movie is my favorite?').toLowerCase();
     var attemptsRemaining = 6;
     var answeredCorrect = false;
@@ -121,7 +121,7 @@ function answerSeven() {
             if (guessAnswer === whatMovie[i]) {
                 answeredCorrect = true;
                 userPoints++;
-                alert(`My favorite movie to watch is ${guessAnswer}.`);
+                alert(`My favorite movie to watch is ${whatMovie}.`);
 
             }
         }
@@ -135,7 +135,7 @@ function answerSeven() {
 
 
     if (!answeredCorrect) {
-        alert(`Thanks for playing, ${userName}, the correct answer was the matrix :)`)
+        alert(`Thanks for playing, ${userName}, the correct answer was ${whatMovie} :)`)
     }
 }
 answerSeven();
